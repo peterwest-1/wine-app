@@ -258,9 +258,6 @@ export const WineForm: React.FC<WineFormProps> = ({ initialData }) => {
                     <Checkbox
                       checked={field.value ?? false}
                       onCheckedChange={field.onChange}
-                      disabled={
-                        initialData != null && initialData.consumed == true
-                      }
                     />
                   </FormControl>
                   <div className="space-y-1 leading-none">
@@ -280,12 +277,7 @@ export const WineForm: React.FC<WineFormProps> = ({ initialData }) => {
                   <FormItem className="flex flex-col ">
                     <FormLabel>Consumed On</FormLabel>
                     <Popover>
-                      <PopoverTrigger
-                        asChild
-                        disabled={
-                          initialData != null && initialData.consumed == true
-                        }
-                      >
+                      <PopoverTrigger asChild>
                         <FormControl>
                           <Button
                             variant={"outline"}
