@@ -40,11 +40,6 @@ export const columns: ColumnDef<WineModelType>[] = [
   {
     accessorKey: "rating",
     header: "Rating",
-    cell: ({ row }) => {
-      const rating = row.getValue("rating") as any;
-
-      return <WineRating rating={rating} />;
-    },
   },
   {
     accessorKey: "consumed",

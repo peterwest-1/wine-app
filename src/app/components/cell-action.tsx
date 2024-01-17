@@ -14,11 +14,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { AlertModal } from "@/components/modals/alert-modal";
-import { WineType } from "@/models/wine";
 import { api } from "@/trpc/react";
+import { WineModelType } from "@/models/wine";
 
 interface CellActionProps {
-  data: WineType;
+  data: WineModelType;
 }
 
 export const CellAction: React.FC<CellActionProps> = ({ data }) => {

@@ -26,7 +26,7 @@ export const WineFormSchema = z.object({
   type: z.string(),
   varietal: z.string(),
   year: z.coerce.number().max(2024),
-  rating: z.coerce.number().int().min(1).max(5).nullish(),
+  rating: z.coerce.number().min(1).max(5).nullish(),
   consumed: z.boolean().nullish(),
   consumedAt: z.date().nullish(),
 });

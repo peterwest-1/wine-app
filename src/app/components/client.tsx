@@ -14,7 +14,7 @@ interface WinesClientProps {
   data: WineModelType[];
 }
 
-const WinesClient = async ({ data }: WinesClientProps) => {
+const WinesClient = ({ data }: WinesClientProps) => {
   const router = useRouter();
 
   return (

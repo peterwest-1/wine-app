@@ -7,7 +7,7 @@ generator zod {
     relationModel         = true
     modelCase             = "PascalCase"
     modelSuffix           = "Model"
-    useDecimalJs          = true
+    useDecimalJs          = false
     imports               = null
     prismaJsonNullability = true
 }
@@ -28,7 +28,7 @@ model Wine {
     year       Int
     type       String
     varietal   String
-    rating     Int?
+    rating     Decimal?
     consumed   Boolean?
     consumedAt DateTime?
     createdAt  DateTime  @default(now())
