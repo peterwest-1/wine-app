@@ -1,5 +1,4 @@
-import * as z from "zod"
-import * as imports from "../null"
+import * as z from "zod";
 
 export const WineModel = z.object({
   id: z.number().int(),
@@ -12,4 +11,4 @@ export const WineModel = z.object({
   consumedAt: z.date().nullish(),
   createdAt: z.date(),
   updatedAt: z.date(),
-})
+});

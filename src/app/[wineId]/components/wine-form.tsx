@@ -242,12 +242,7 @@ export const WineForm: React.FC<WineFormProps> = ({ initialData }) => {
                 <FormItem>
                   <FormLabel>Rating</FormLabel>
                   <FormControl>
-                    <Input
-                      type="number"
-                      disabled={loading}
-                      placeholder="Rating"
-                      {...field}
-                    />
+                    <Input disabled={loading} placeholder="Rating" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
